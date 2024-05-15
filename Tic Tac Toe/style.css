@@ -1,1 +1,74 @@
 <--use cooler.com to choose color palettes -->
+
+*{
+	margin: 0px;
+	padding: 0px;
+	/* border: 1px solid red; */
+}
+
+body{
+	background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: #E1F7F5;	
+	text-align: center;
+}
+
+.container{
+	height: 70vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	
+}
+#box{
+	height: 18vmin;
+	width: 18vmin;
+	border-radius: 1rem;
+	border: none;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1) ;
+	font-size: 8vmin;
+	color: #000428;
+}
+#game{
+	height: 60vmin;
+	width: 60vmin;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5vmin;
+}
+#restart{
+	padding: 1rem;
+	border-radius: 1rem;
+	border: none;
+	font-size: 1.25rem;
+	background-color:  #E1F7F5;
+	color: #000428;
+	cursor: pointer;
+}
+
+#new{
+	padding: 1rem;
+	border-radius: 1rem;
+	border: none;
+	font-size: 1.25rem;
+	background-color:  #E1F7F5;
+	color: #000428;
+	cursor: pointer;	
+}
+
+#msg{
+	font-size: 5vmin;
+}
+.msgcon{
+	height: 20vmin;
+}
+
+.hide{
+	display: none;
+}
