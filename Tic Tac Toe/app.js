@@ -28,7 +28,7 @@ boxes.forEach((box) => {
 	
 	if(turn0){
 		//player0
-		box.innerText = "0"
+		box.innerText = "O"
 		turn0 = false;
 	}
 	else{
