@@ -46,6 +46,7 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
 	padding: 1rem;
 	border-radius: 1rem;
 	border: none;
+	margin: auto;
 	font-size: 1.25rem;
 	background-color:  #E1F7F5;
 	color: #000428;
