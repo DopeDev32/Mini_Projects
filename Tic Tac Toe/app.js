@@ -37,7 +37,7 @@ boxes.forEach((box) => {
 		box.innerText = "X"
 		turn0= true
 	}
-	box.disable = true
+	boxes.disable = true
 
 	checkwinner()
 	});
