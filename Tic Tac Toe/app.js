@@ -21,6 +21,7 @@ const reset = ()=>{
 	turn0 = true
 	enablebox()
 	msgcon.classList.add("hide")
+	restart.style.display = "block"
 }
 
 boxes.forEach((box) => {
@@ -58,6 +59,7 @@ const showinner = (winner) => {
 	msg.innerText = `Congratulation, Winner is ${winner}`;
 	msgcon.classList.remove("hide")
 	disablebox()
+	restart.style.display = "none"
 }
 
 const checkwinner = () => {
