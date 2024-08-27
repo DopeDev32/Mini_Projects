@@ -1,1 +1,73 @@
-....
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Village Survey Form</h1>
+        <form id="surveyForm">
+
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="village">Village:</label>
+            <input type="text" id="village" name="village" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required>
+
+            <label for="education">Highest level of education:</label>
+            <select id="education" name="education" required>
+                <option value="">Select</option>
+                <option value="none">No formal education</option>
+                <option value="primary">Primary</option>
+                <option value="secondary">Secondary</option>
+                <option value="higher">Higher education</option>
+            </select>
+    
+            <h2>Infrastructure</h2>
+            <label for="waterAccess">Access to clean water:</label>
+            <select id="waterAccess" name="waterAccess" required>
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+    
+            <label for="waterSource">Water source:</label>
+            <input type="text" id="waterSource" name="waterSource">
+            
+            <label for="electricity">Hours of electricity per day:  <span><output id="value"></output></span></label>
+            <input id="pi_input" type="range" min="0" max="24" step="1" />
+            
+            <h2>Future Development</h2>
+            <label for="improvements">Desired improvements for the village:</label>
+            <textarea id="improvements" name="improvements" rows="4"></textarea>
+
+            <label for="feedback">Feedback about the village:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
